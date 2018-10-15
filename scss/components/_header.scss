@@ -93,6 +93,16 @@ nav a:focus {
             &-3 {
                 background-image: url('../img/slide3.jpg');
             }
+
+            h2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-weight: 700;
+                font-size: 40px;
+            }
         }
     }
 }
