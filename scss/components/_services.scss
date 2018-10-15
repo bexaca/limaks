@@ -1,0 +1,48 @@
+#services__block {
+    .service {
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        &-1 {
+            background-image: url('../img/service1.jpg')
+        }
+        &-2 {
+            background-image: url('../img/service3.jpg')
+        }
+        &-3 {
+            background-image: url('../img/service2.jpg')
+        }
+        &-4 {
+            background-image: url('../img/service4.jpg')
+        }
+    }
+    .service-text {
+        height: 400px;
+        background: $primadry-gray-color;
+        color: white;
+        padding-top: 70px;
+        h3 {
+            &:before {
+                content: '';
+                background-color: $secondary-color;
+                width: 90px;
+                height: 30px;
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                opacity: 0.5;
+            }
+        }
+        p{
+            margin-bottom: 15px;
+        }
+        a {
+            display: inline-block;
+            background: $secondary-color;
+            color: white;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+    }
+}

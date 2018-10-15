@@ -15,18 +15,13 @@ body {
     display: block;
 }
 
+.p-0{
+    padding: 0;
+}
+
 .d-lg-none{
     @media (min-width: 991px){
         display: none;
-    }
-}
-
-main {
-    @media (min-width: 991px) {
-        background: url(../img/bg.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
     }
 }
 
@@ -125,7 +120,6 @@ body {
     font-family: sans-serif;
 }
 
-p {
-    font-weight: 600;
-    font-size: 18px;
+.d-none{
+    display: none;
 }
