@@ -5,10 +5,10 @@ $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
 $email_from = "$visitor_email";//<== update the email address
-$email_subject = "Empire of wisdom website";
+$email_subject = "Limaks";
 $email_body = "$message \n\n $name";
     
-$to = "empireofwisdomfci5042@gmail.com";//<== update the email address
+$to = "limaksbeska@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
