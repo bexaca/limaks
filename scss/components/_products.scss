@@ -1,8 +1,11 @@
-#services__block {
-    .service {
+#products__block {
+    .product {
         background-size: cover;
         background-position: center;
         height: 400px;
+        @media (max-width: 991px){
+            display: none;
+        }
         &-1 {
             background-image: url('../img/service1.jpg')
         }
@@ -16,51 +19,93 @@
             background-image: url('../img/service4.jpg')
         }
     }
-    .service-text {
+    .product-text {
         height: 400px;
         color: #333;
         padding-top: 70px;
-        border: 2px solid $secondary-color;
-        &-first{
+        border: 4px solid $secondary-color;
+        background-size: cover;
+        background-position: center;
+        &-first {
             border-left: none;
             border-bottom: none;
-        }
-        &-second{
-            border-right: none;
-            border-bottom: none;
-            border-top: none;
-        }
-        &-third{
-            border-top: none;
-            border-left: none;
-            border-bottom: none;
-        }
-        &-fourth{
-            border-right: none;
-            border-top: none;
-        }
-        h3 {
-            &:before {
-                content: '';
-                background-color: $secondary-color;
-                width: 90px;
-                height: 30px;
-                position: absolute;
-                z-index: 0;
-                left: 0;
-                opacity: 0.5;
+            @media (max-width: 991px){
+                span, p{
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service1.jpg');
             }
         }
-        p{
+        &-second {
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+            @media (max-width: 991px){
+                span, p{
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service2.jpg');
+            }
+        }
+        &-third {
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            @media (max-width: 991px){
+                span, p{
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service3.jpg');
+            }
+        }
+        &-fourth {
+            border-right: none;
+            border-top: none;
+            @media (max-width: 991px){
+                span, p{
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service4.jpg');
+            }
+        }
+        p {
             margin-bottom: 15px;
         }
-        a {
-            display: inline-block;
-            background: $secondary-color;
-            color: white;
-            padding: 10px 15px;
-            font-weight: 600;
-            border-radius: 5px;
+        h3 {
+            position: relative;
+            &.first, &.third{
+                text-align: left;
+                .red-square {
+                    top: -4px;
+                    left: -60px;
+                    z-index: 1;
+                    @media (max-width: 991px){
+                        width: 60px;
+                        left: -15px;
+                    }
+                }
+            }
+            &.second, &.fourth{
+                text-align: right;
+                .red-square {
+                    top: -4px;
+                    right: -60px;
+                    left: auto;
+                    z-index: 1;
+                    @media (max-width: 991px){
+                        width: 60px;
+                        right: -15px;
+                    }
+                }
+            }
+            span{
+                position: relative;
+                z-index: 2;
+            }
         }
     }
 }
