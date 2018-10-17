@@ -13449,16 +13449,8 @@ __webpack_require__(14)
 
 jQuery(document).ready(function () {
 
-    $('.carousel__inner').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        responsive: true
-    });
-
     if ($('#wrapper .icon-wrap').css('display') == 'none') {
+
         $('a[href*=\\#].scroll').on('click', function (event) {
             event.preventDefault();
             $('html,body').animate({
@@ -13469,7 +13461,7 @@ jQuery(document).ready(function () {
         $('a[href*=\\#].scroll').on('click', function (event) {
             event.preventDefault();
             $('html,body').delay(200).animate({
-                scrollTop: $(this.hash).offset().top - 382
+                scrollTop: $(this.hash).offset().top - 230
             }, 1000, "swing");
         });
     }
@@ -13479,8 +13471,6 @@ jQuery(document).ready(function () {
             window.location = window.location.origin;
         }, 3000);
     }
-
-    new WOW().init();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 

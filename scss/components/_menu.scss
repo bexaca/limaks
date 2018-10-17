@@ -26,7 +26,7 @@ $bounce: cubic-bezier(.87,-.50,.19,1.50);
     &__line {
       position: absolute;
       left: 0;
-      background-color: $line-color;
+      background-color: white;
       height: $line-size;
       width: 100%;
       border-radius: $line-radius;
@@ -58,25 +58,29 @@ $bounce: cubic-bezier(.87,-.50,.19,1.50);
       position: absolute;
       width: 100%;
       height: $line-size;
-      background-color: $line-color;
+      background-color: white;
       border-radius: $line-radius;
       transition: transform .2s ease-in-out;
     }
     // Open
     &--close4.open &__line--1 {
+      color: $primary-color;
       opacity: 0;
       transform: translate3d(-2*$to-translate,0,0);
       transition: all .2s ease-in-out;
     }
     &--close4.open &__line--2{
+      background-color: $primary-color;
       transform: rotate(45deg);
       transition: transform .2s ease-in-out;
     }
     &--close4.open &__line--2:before {
+      background-color: $primary-color;
       transform: rotate(-90deg);
       transition: transform .2s ease-in-out;
     }
     &--close4.open &__line--3{
+      color: $primary-color;
       opacity: 0;
       transform: translate3d(2*$to-translate,0,0);
       transition: all .2s ease-in-out;
