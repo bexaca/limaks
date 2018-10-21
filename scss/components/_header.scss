@@ -88,15 +88,17 @@ nav a:focus {
             background-repeat: no-repeat;
             background-attachment: fixed;
             &-1 {
-                background-image: url('../img/slide1.JPG');
+                background-image: url('../img/service1.jpg');
             }
             &-2 {
-                background-image: url('../img/slide2.JPG');
+                background-image: url('../img/service2.jpg');
             }
             &-3 {
-                background-image: url('../img/slide3.JPG');
+                background-image: url('../img/service3.jpg');
             }
-
+            &-4 {
+                background-image: url('../img/service4.jpg');
+            }
             h2{
                 position: absolute;
                 top: 50%;
