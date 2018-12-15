@@ -1,28 +1,59 @@
 #products__block {
     padding-bottom: 0;
-    
     .product {
         background-size: cover;
         background-position: center;
-        height: 400px;
-        @media (max-width: 991px){
+        @media (max-width: 991px) {
             display: none;
         }
+        @media (max-width: 1199px) {
+            height: 520px;
+        }
+        @media (min-width: 1200px) {
+            height: 450px;
+        }
         &-1 {
-            background-image: url('../img/service1.jpg')
+            background-image: url('../img/kalolifer/6_9_12_kw/kalolifer (1).jpg');
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
         }
         &-2 {
-            background-image: url('../img/service3.jpg')
+            background-image: url('../img/drzac/drzac-(1).jpg');
+            @media (max-width: 1199px) {
+                height: 620px;
+            }
+            @media (min-width: 1200px) {
+                height: 580px;
+            }
         }
         &-3 {
-            background-image: url('../img/service2.jpg')
+            background-image: url('../img/poklopac/poklopac-(1).jpg');
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
         }
         &-4 {
-            background-image: url('../img/service4.jpg')
+            background-image: url('../img/kutija/kutija-(1).jpg')
         }
     }
     .product-text {
-        height: 400px;
+        @media (max-width: 1199px) {
+            height: 520px;
+        }
+        @media (min-width: 1200px) {
+            height: 450px;
+        }
+        @media (max-width: 991px) {
+            height: auto;
+            padding-bottom: 70px;
+        }
         color: #333;
         padding-top: 70px;
         border: 4px solid $secondary-color;
@@ -31,8 +62,18 @@
         &-first {
             border-left: none;
             border-bottom: none;
-            @media (max-width: 991px){
-                span, p{
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span, p {
                     color: white;
                 }
                 border: none;
@@ -43,8 +84,19 @@
             border-right: none;
             border-bottom: none;
             border-top: none;
-            @media (max-width: 991px){
-                span, p{
+            @media (max-width: 1199px) {
+                height: 620px;
+            }
+            @media (min-width: 1200px) {
+                height: 580px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span,
+                p {
                     color: white;
                 }
                 border: none;
@@ -55,8 +107,19 @@
             border-top: none;
             border-left: none;
             border-bottom: none;
-            @media (max-width: 991px){
-                span, p{
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span,
+                p {
                     color: white;
                 }
                 border: none;
@@ -66,8 +129,8 @@
         &-fourth {
             border-right: none;
             border-top: none;
-            @media (max-width: 991px){
-                span, p{
+            @media (max-width: 991px) {
+                span, p {
                     color: white;
                 }
                 border: none;
@@ -79,32 +142,34 @@
         }
         h3 {
             position: relative;
-            &.first, &.third{
+            &.first,
+            &.third {
                 text-align: left;
                 .red-square {
                     top: -4px;
                     left: -60px;
                     z-index: 1;
-                    @media (max-width: 991px){
+                    @media (max-width: 991px) {
                         width: 60px;
                         left: -15px;
                     }
                 }
             }
-            &.second, &.fourth{
+            &.second,
+            &.fourth {
                 text-align: right;
                 .red-square {
                     top: -4px;
                     right: -60px;
                     left: auto;
                     z-index: 1;
-                    @media (max-width: 991px){
+                    @media (max-width: 991px) {
                         width: 60px;
                         right: -15px;
                     }
                 }
             }
-            span{
+            span {
                 position: relative;
                 z-index: 2;
             }
