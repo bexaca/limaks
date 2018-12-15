@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
         $('a[href*=\\#].scroll').on('click', function (event) {
             event.preventDefault();
             $('html,body').delay(200).animate({
-                scrollTop: $(this.hash).offset().top - 230
+                scrollTop: $(this.hash).offset().top - 360
             }, 1000, "swing");
         });
     }
