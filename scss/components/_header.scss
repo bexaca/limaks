@@ -45,7 +45,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    outline: none; 
+    outline: none;
     color: $secondary-color;
     text-decoration: none;
 }
@@ -77,40 +77,38 @@ nav a:focus {
 }
 
 .carousel {
-    .carousel-inner {
-        .item {
-            height: 100vh;
-            @media (max-width: 768px) {
-                height: 500px;
-            }
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            &-1 {
-                background-image: url('../img/slide5.jpg');
-            }
-            &-2 {
-                background-image: url('../img/slide2.JPG');
-            }
-            &-3 {
-                background-image: url('../img/slide1.JPG');
-            }
-            &-4 {
-                background-image: url('../img/slide4.jpg');
-            }
-            &-5 {
-                background-image: url('../img/slide3.JPG');
-            }
-            h2{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-weight: 700;
-                font-size: 40px;
-            }
+    .item {
+        height: 100vh;
+        max-height: none !important;
+        @media (max-width: 768px) {
+            height: 500px;
+        }
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; // background-attachment: fixed;
+        &-1 {
+            background-image: url('../img/slide5.jpg');
+        }
+        &-2 {
+            background-image: url('../img/slide2.JPG');
+        }
+        &-3 {
+            background-image: url('../img/slide1.JPG');
+        }
+        &-4 {
+            background-image: url('../img/slide4.jpg');
+        }
+        &-5 {
+            background-image: url('../img/slide3.JPG');
+        }
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
         }
     }
 }
