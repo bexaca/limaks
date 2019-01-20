@@ -13471,6 +13471,16 @@ jQuery(document).ready(function () {
             window.location = window.location.origin;
         }, 3000);
     }
+
+    $('#wrapper .icon-wrap').on('click', function () {
+        $('.fixed-sidebar').addClass('open');
+        $('html, body').css('overflow', 'hidden');
+    });
+
+    $('a.close').on('click', function () {
+        $('.fixed-sidebar').removeClass('open');
+        $('html, body').css('overflow', 'inherit');
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 

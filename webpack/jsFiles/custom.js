@@ -23,4 +23,13 @@ jQuery(document).ready(function () {
         }, 3000);
     }
 
+    $('#wrapper .icon-wrap').on('click', function() {
+        $('.fixed-sidebar').addClass('open');
+        $('html, body').css('overflow', 'hidden');
+    })
+
+    $('a.close').on('click', function() {
+        $('.fixed-sidebar').removeClass('open');
+        $('html, body').css('overflow', 'inherit');
+    })
 });
