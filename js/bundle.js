@@ -13485,7 +13485,6 @@ jQuery(document).ready(function () {
         $('html, body').css('overflow', 'inherit');
         $('html, body').css('position', 'static');
     });
-    console.log('testa');
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 
