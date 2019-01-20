@@ -25,12 +25,14 @@ jQuery(document).ready(function () {
 
     $('#wrapper .icon-wrap').on('click', function() {
         $('.fixed-sidebar').addClass('open');
+        $('.sidebar-overlay').addClass('open');
         $('html, body').css('overflow', 'hidden');
         $('html, body').css('position', 'fixed');
     })
 
     $('a.close').on('click', function() {
         $('.fixed-sidebar').removeClass('open');
+        $('.sidebar-overlay').removeClass('open');
         $('html, body').css('overflow', 'inherit');
         $('html, body').css('position', 'static');
     })
