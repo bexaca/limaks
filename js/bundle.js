@@ -13481,6 +13481,7 @@ jQuery(document).ready(function () {
         $('.fixed-sidebar').removeClass('open');
         $('html, body').css('overflow', 'inherit');
     });
+    console.log('test');
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 

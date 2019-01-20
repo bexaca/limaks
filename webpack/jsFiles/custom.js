@@ -32,4 +32,5 @@ jQuery(document).ready(function () {
         $('.fixed-sidebar').removeClass('open');
         $('html, body').css('overflow', 'inherit');
     })
+    console.log('test')
 });
