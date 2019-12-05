@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-
     if ($('#wrapper .icon-wrap').css('display') == 'none') {
         
         $('a[href*=\\#].scroll').on('click', function (event) {

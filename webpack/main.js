@@ -1,5 +1,4 @@
 //BOOTSTRAP JS
-import Bootstrap from "bootstrap";
 
 //CUSTOM JS
 
@@ -11,5 +10,6 @@ require ('./jsFiles/slick.min.js');
 require ('./jsFiles/anime.js');
 require ('./jsFiles/replace_me.js');
 require ('./jsFiles/phone-navigation.js');
+require ('./jsFiles/content.js');
 
 //EXTERNAL JS
